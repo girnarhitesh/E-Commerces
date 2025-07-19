@@ -3,30 +3,53 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import "./Hero.css"
+import './Hero.css';
+import { Row, Col } from 'antd';
 
 import { Keyboard, Pagination, Navigation } from 'swiper/modules';
 
 const Hero = () => {
-    return (
-        <Swiper
-            slidesPerView={1}
-            spaceBetween={30}
-            keyboard={{ enabled: true }}
-            pagination={{ clickable: true }}
-            navigation={true}
-            modules={[Keyboard, Pagination, Navigation]}
-            className="mySwiper"
-        >
-            <div>
-                <SwiperSlide> <img src="https://images.unsplash.com/photo-1682687979601-082a1295b78f?w=900" alt="slide" /> </SwiperSlide>
-                <SwiperSlide><img src="https://images.unsplash.com/photo-1725381783372-73852121febf?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGUlMjBjb21tZXJjZXMlMjBzaXRlJTIwaW1nfGVufDB8fDB8fHww" alt="" /></SwiperSlide>
-                <SwiperSlide><img src="https://images.unsplash.com/photo-1603771929104-df2b577c8724?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGUlMjBjb21tZXJjZXMlMjBzaXRlJTIwaW1nfGVufDB8fDB8fHww" alt="" /></SwiperSlide>
-                <SwiperSlide><img src="https://images.unsplash.com/photo-1588848567248-8203ed798b4e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGUlMjBjb21tZXJjZXMlMjBzaXRlJTIwaW1nfGVufDB8fDB8fHww" alt="" /></SwiperSlide>
-                <SwiperSlide><img src="https://images.unsplash.com/photo-1736427581296-313650053c2c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGUlMjBjb21tZXJjZXMlMjBzaXRlJTIwaW1nfGVufDB8fDB8fHww" alt="" /></SwiperSlide>
-            </div>
-        </Swiper>
-    );
+  return (
+    <>
+
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        keyboard={{ enabled: true }}
+        pagination={{ clickable: true }}
+        navigation={true}
+        modules={[Keyboard, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img
+            src="https://images.unsplash.com/photo-1567266230512-eabb325d4b62?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvcHBpbmclMjBpbWd8ZW58MHx8MHx8fDA%3D"
+            alt="slide"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="https://images.unsplash.com/photo-1600201319331-27d31ecd7850?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNob3BwaW5nJTIwaW1nfGVufDB8fDB8fHww"
+            alt="slide"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="https://images.unsplash.com/photo-1728464864676-8504ab36f6d8?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c2hvcHBpbmclMjBpbWclMjBwcm9kdWN0c3xlbnwwfHwwfHx8MA%3D%3D"
+            alt="slide"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="https://images.unsplash.com/photo-1555448049-67b919120e75?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHNob3BwaW5nJTIwaW1nJTIwcHJvZHVjdHMlMjB0b3lzfGVufDB8fDB8fHww"
+            alt="slide"
+          />
+        </SwiperSlide>
+      </Swiper>
+
+
+    </>
+  );
 };
 
 export default Hero;

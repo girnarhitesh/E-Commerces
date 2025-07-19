@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import "./Navigation.css"
-import Link from 'antd/es/typography/Link';
+import { Link } from 'react-router-dom';
 
 function Navigation() {
     const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -27,9 +27,9 @@ function Navigation() {
     }, []);
 
     const categories = [
-        { name: 'Men\'s Fashion', link: '/men', },
-        { name: 'Women\'s Fashion', link: '/women', },
-        { name: 'Kids & Baby', link: '/kids', },
+        { name: 'Men', link: '/men', },
+        { name: 'Women', link: '/women', },
+        { name: 'Kids', link: '/kids', },
     ];
 
     const handleSearch = (e) => {
@@ -40,17 +40,17 @@ function Navigation() {
 
     return (
         <nav className="navbar">
-            <Link to="/">
-                <div className="navbar__logo">
-                    <span className="logo-icon">🛍️</span>
+            <a href='/'>
+                <div className="navbar__logo" >
+                    <span className="logo-icon" >🛍️</span>
                     E-Shop
                 </div>
-            </Link>
+            </a>
 
             <div className={`navbar__links ${menuOpen ? 'navbar__links--open' : ''}`} ref={menuRef}>
-                <a href="#" className="navbar__link">
+                {/* <a href="/" className="navbar__link">
                     Home
-                </a>
+                </a> */}
 
                 <div
                     className="navbar__dropdown"

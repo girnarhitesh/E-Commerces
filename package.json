@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "antd": "^5.26.5",
+    "bootstrap": "^5.3.7",
+    "react-bootstrap": "^2.10.10",
+    "react-router-dom": "^7.7.0",
+    "swiper": "^11.2.10"
+  },
+  "scripts": {
+    "dev": "vite"
+  },
+  "devDependencies": {
+    "vite": "^7.0.5"
+  }
+}

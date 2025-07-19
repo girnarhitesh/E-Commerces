@@ -2,46 +2,55 @@
   "hash": "8fe4d45a",
   "configHash": "71bc64e8",
   "lockfileHash": "fc37ee25",
-  "browserHash": "d43adebd",
+  "browserHash": "c8c13292",
   "optimized": {
     "antd/es/typography/Link": {
       "src": "../../node_modules/antd/es/typography/Link.js",
       "file": "antd_es_typography_Link.js",
-      "fileHash": "fc28204d",
+      "fileHash": "7839a3e2",
       "needsInterop": false
     },
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "a6f4f666",
+      "fileHash": "578b10d8",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "1296d7ec",
+      "fileHash": "d3ebf8b6",
       "needsInterop": true
     },
     "react-router-dom": {
       "src": "../../node_modules/react-router-dom/dist/index.mjs",
       "file": "react-router-dom.js",
-      "fileHash": "47e747f6",
+      "fileHash": "4babe580",
       "needsInterop": false
     },
     "swiper/modules": {
       "src": "../../node_modules/swiper/modules/index.mjs",
       "file": "swiper_modules.js",
-      "fileHash": "910f0049",
+      "fileHash": "6917d902",
       "needsInterop": false
     },
     "swiper/react": {
       "src": "../../node_modules/swiper/swiper-react.mjs",
       "file": "swiper_react.js",
-      "fileHash": "0993291a",
+      "fileHash": "9d494c91",
+      "needsInterop": false
+    },
+    "antd": {
+      "src": "../../node_modules/antd/es/index.js",
+      "file": "antd.js",
+      "fileHash": "8a4bd2d1",
       "needsInterop": false
     }
   },
   "chunks": {
+    "chunk-4HZQ6DE2": {
+      "file": "chunk-4HZQ6DE2.js"
+    },
     "chunk-XQIPT53K": {
       "file": "chunk-XQIPT53K.js"
     },
