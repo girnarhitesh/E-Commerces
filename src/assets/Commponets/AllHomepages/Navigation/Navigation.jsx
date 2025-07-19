@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import "./Navigation.css"
+import Link from 'antd/es/typography/Link';
 
 function Navigation() {
     const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -39,10 +40,12 @@ function Navigation() {
 
     return (
         <nav className="navbar">
-            <div className="navbar__logo">
-                <span className="logo-icon">🛍️</span>
-                E-Shop
-            </div>
+            <Link to="/">
+                <div className="navbar__logo">
+                    <span className="logo-icon">🛍️</span>
+                    E-Shop
+                </div>
+            </Link>
 
             <div className={`navbar__links ${menuOpen ? 'navbar__links--open' : ''}`} ref={menuRef}>
                 <a href="#" className="navbar__link">
