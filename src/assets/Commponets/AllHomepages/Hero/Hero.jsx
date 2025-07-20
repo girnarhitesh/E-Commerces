@@ -47,7 +47,8 @@ const Hero = () => {
           />
         </SwiperSlide>
       </Swiper>
-<Kids/>
+      <Kids />
+
 
     </>
   );

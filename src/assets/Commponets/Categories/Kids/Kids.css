@@ -12,7 +12,7 @@
     padding: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
-    height: 470px;
+    /* height: 470px; */
     /* fixed height */
     display: flex;
     flex-direction: column;
@@ -44,11 +44,13 @@
 .product-info .rating {
     font-size: 13px;
     color: #888;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .product-info .category {
     font-size: 13px;
     color: #aaa;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .filter-buttons {
@@ -89,4 +91,117 @@
 
 .add-to-cart-btn:hover {
     background-color: #218838;
+}
+
+/* Navigation.css */
+
+/* ... existing styles ... */
+
+.navbar__cart-container {
+    position: relative;
+    display: flex; /* To align button and dropdown */
+}
+
+.cart-dropdown-menu {
+    position: absolute;
+    top: 100%; /* Position below the cart button */
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 250px;
+    z-index: 1000;
+    padding: 15px;
+    border-radius: 5px;
+    max-height: 300px; /* Limit height for scroll if many items */
+    overflow-y: auto; /* Enable scroll */
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.cart-dropdown-menu h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.1em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+.cart-dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.cart-dropdown-menu li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.cart-dropdown-menu li:last-child {
+    border-bottom: none;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.cart-total {
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    text-align: right;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.checkout-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 15px;
+    font-size: 0.95em;
+    transition: background-color 0.2s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.checkout-btn:hover {
+    background-color: #0056b3;
+}
+
+/* For mobile, you might want the dropdown to expand differently */
+@media (max-width: 768px) {
+    .navbar__cart-container {
+        /* Adjust positioning for mobile if needed */
+        position: static; /* Or relative, depending on your mobile layout */
+        width: 100%;
+        display: block;
+    }
+    .cart-dropdown-menu {
+        position: static; /* Make it flow with content */
+        width: auto;
+        border: none;
+        box-shadow: none;
+        max-height: none;
+        overflow-y: visible;
+        background-color: transparent; /* Or match navbar mobile background */
+        padding: 0 15px 15px 15px; /* Adjust padding for mobile menu */
+    }
+    .navbar__actions {
+        order: 3; /* Push actions to the end in mobile */
+    }
 }
