@@ -28,7 +28,7 @@ function Navigation() {
 
     const categories = [
         { name: 'Men', link: '/men', },
-        { name: 'Women', link: '/women', },
+        { name: 'Women', link: '/woman', },
         { name: 'Kids', link: '/kids', },
     ];
 

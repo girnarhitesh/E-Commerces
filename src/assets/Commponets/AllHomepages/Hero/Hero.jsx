@@ -7,6 +7,7 @@ import './Hero.css';
 import { Row, Col } from 'antd';
 
 import { Keyboard, Pagination, Navigation } from 'swiper/modules';
+import Kids from '../../Categories/Kids/Kids';
 
 const Hero = () => {
   return (
@@ -46,7 +47,7 @@ const Hero = () => {
           />
         </SwiperSlide>
       </Swiper>
-
+<Kids/>
 
     </>
   );
